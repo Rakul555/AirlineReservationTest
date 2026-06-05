@@ -6,14 +6,16 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 
 public class AdminBaseTest {
     protected static WebDriver driver;
 
-    @BeforeSuite
+    @BeforeTest
     public void setUp() {
         driver = new EdgeDriver();
         driver.manage().window().maximize();
@@ -29,8 +31,9 @@ public class AdminBaseTest {
                 .until(ExpectedConditions.urlContains("/admin"));
     }
 
-    @AfterSuite
-    public void tearDown() {
+    @AfterTest
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(3000);
         if (driver != null) {
             driver.quit();
         }

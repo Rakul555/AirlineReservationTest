@@ -32,8 +32,8 @@ public class HomePageTest extends BaseTest {
                 {
                         "PREMIUM_ECONOMY",
                         "COK",
-                        "BLR",
-                        "30-05-2026"
+                        "DEL",
+                        "06-06-2026"
                 }
         };
     }

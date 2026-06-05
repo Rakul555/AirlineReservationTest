@@ -12,7 +12,7 @@ public class FlightStatusTest extends BaseTest {
     @DataProvider
     public Object[][] setFlightData(){
         return new Object[][]{
-                {"DA 555","02-06-2026"}
+                {"DA 555","06-06-2026"}
         };
     }
 

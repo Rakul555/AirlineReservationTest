@@ -10,7 +10,7 @@ public class AdminHomePageTest extends AdminBaseTest {
     @DataProvider(name = "flightData")
     public Object[][] flightData() {
         return new Object[][] {
-                { "DA 007", "Deccan Airlines", "MAA — Chennai", "BOM — Mumbai", "06/01/2026", "17:20", "06/02/2026", "15:15", "180", "20", "5000" },
+                { "DA 007", "Deccan Airlines", "MAA — Chennai", "BOM — Mumbai", "06/06/2026", "17:20", "06/06/2026", "18:15", "180", "20", "5000" },
         };
     }
 

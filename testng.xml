@@ -6,46 +6,47 @@
         </classes>
     </test>
 
-<!--    <test name="Home Page Test">-->
-<!--        <classes>-->
-<!--            <class name="org.example.Tests.UserTest.HomePageTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Home Page Test">
+        <classes>
+            <class name="org.example.Tests.UserTest.HomePageTest"/>
+        </classes>
+    </test>
 
-<!--    <test name="Tatkal test">-->
-<!--        <classes>-->
-<!--            <class name="org.example.Tests.UserTest.TatkalReservationTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Tatkal test">
+        <classes>
+            <class name="org.example.Tests.UserTest.TatkalReservationTest"/>
+        </classes>
+    </test>
 
-<!--    <test name="Flight Status Test">-->
-<!--        <classes>-->
-<!--            <class name = "org.example.Tests.UserTest.FlightStatusTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Admin Login">-->
-<!--        <classes>-->
-<!--            <class name="org.example.Tests.AdminTest.AdminBaseTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Admin Home Page">-->
-<!--        <classes>-->
-<!--            <class name="org.example.Tests.AdminTest.AdminHomePageTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name = "Admin Booking">-->
-<!--        <classes>-->
-<!--            <class name="org.example.Tests.AdminTest.AdminBookingTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Flight Status Test">
+        <classes>
+            <class name = "org.example.Tests.UserTest.FlightStatusTest"/>
+        </classes>
+    </test>
 
     <test name="Cancel Booking">
         <classes>
             <class name="org.example.Tests.UserTest.MyBookingTest"/>
         </classes>
     </test>
+
+    <test name="Admin Login">
+        <classes>
+            <class name="org.example.Tests.AdminTest.AdminBaseTest"/>
+        </classes>
+    </test>
+
+    <test name="Admin Home Page">
+        <classes>
+            <class name="org.example.Tests.AdminTest.AdminHomePageTest"/>
+        </classes>
+    </test>
+
+    <test name = "Admin Booking">
+        <classes>
+            <class name="org.example.Tests.AdminTest.AdminBookingTest"/>
+        </classes>
+    </test>
+
 
 </suite>
