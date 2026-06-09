@@ -1,15 +1,18 @@
 package org.example.Tests.UserTest;
 
+import org.example.Listeners.TestListener;
 import org.example.Pages.UserPages.HomePage;
 import org.example.Pages.UserPages.MyBookingsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class MyBookingTest extends BaseTest {
+@Listeners(TestListener.class)
+public class MyBookingTest extends AuthenticatedBaseTest {
     MyBookingsPage myBookingsPage;
     HomePage homePage;
 

@@ -23,16 +23,25 @@ public class LoginPage {
     @FindBy(css= "button[type='submit']")
     WebElement button;
 
+    @FindBy(xpath = "//button[@class='register-button']")
+    WebElement registerButton;
+
     public void setUsername(String user){
+        username.clear();
         username.sendKeys(user);
     }
 
     public void setPassword(String pass){
+        password.clear();
         password.sendKeys(pass);
     }
 
     public void clickButton(){
         button.click();
+    }
+
+    public void clickRegisterButton(){
+        registerButton.click();
     }
 
 }

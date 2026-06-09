@@ -1,16 +1,19 @@
 package org.example.Tests.AdminTest;
 
+import org.example.Listeners.TestListener;
 import org.example.Pages.AdminPages.AdminHomePage;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(TestListener.class)
 public class AdminHomePageTest extends AdminBaseTest {
     AdminHomePage page;
 
     @DataProvider(name = "flightData")
     public Object[][] flightData() {
         return new Object[][] {
-                { "DA 007", "Deccan Airlines", "MAA — Chennai", "BOM — Mumbai", "06/06/2026", "17:20", "06/06/2026", "18:15", "180", "20", "5000" },
+                { "DA 897", "Deccan Airlines", "MAA — Chennai", "BOM — Mumbai", "10/06/2026", "17:20", "10/06/2026", "18:15", "180", "20", "5000" },
         };
     }
 

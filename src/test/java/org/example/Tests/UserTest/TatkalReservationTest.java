@@ -1,14 +1,16 @@
 package org.example.Tests.UserTest;
 
+import org.example.Listeners.TestListener;
 import org.example.Pages.UserPages.GuestDetailsPage;
 import org.example.Pages.UserPages.HomePage;
 import org.example.Pages.UserPages.PlaneSelectionPage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
-public class TatkalReservationTest extends BaseTest {
+@Listeners(TestListener.class)
+public class TatkalReservationTest extends AuthenticatedBaseTest {
 
     HomePage homePage;
     HomePageTest homePageTest;

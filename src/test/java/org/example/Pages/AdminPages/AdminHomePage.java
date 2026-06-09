@@ -52,7 +52,6 @@ public class AdminHomePage {
     WebElement createBtn;
 
 
-
     public void enterFlightCode(String code) {
         flightCode.sendKeys(code);
     }
@@ -107,6 +106,7 @@ public class AdminHomePage {
     public void clickSubmitButton(){
         submitButton.click();
     }
+
 }
 
 

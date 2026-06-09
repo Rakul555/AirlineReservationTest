@@ -1,13 +1,15 @@
 package org.example.Tests.UserTest;
 
+import org.example.Listeners.TestListener;
 import org.example.Pages.UserPages.GuestDetailsPage;
 import org.example.Pages.UserPages.HomePage;
 import org.example.Pages.UserPages.PlaneSelectionPage;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
-public class HomePageTest extends BaseTest {
+@Listeners(TestListener.class)
+public class HomePageTest extends AuthenticatedBaseTest {
 
     HomePage home;
     PlaneSelectionPage planeSelectionPage;
@@ -16,24 +18,15 @@ public class HomePageTest extends BaseTest {
     //-----------------------------------------------------------------------------------
     //                                  Data Provider
     //-----------------------------------------------------------------------------------
-    @DataProvider
-    public Object[][] dataMethod(){
-        return new Object[][]{
-                {
-                        "Saran@gmail.com",
-                        "Saran@2004"
-                }
-        };
-    }
 
     @DataProvider
     public Object[][] homeDataMethod(){
         return new Object[][]{
                 {
                         "PREMIUM_ECONOMY",
-                        "COK",
-                        "DEL",
-                        "06-06-2026"
+                        "MAA",
+                        "BOM",
+                        "10-06-2026"
                 }
         };
     }
